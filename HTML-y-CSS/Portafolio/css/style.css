@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	/*colores*/
+	--color-primario: #000000;
+	--color-secundario: #f6f6f6;
+	--color-terciario: #22D4FD;
+	--color-hover: #272727;
+	/*fuentes*/
+	--fuente-montserrat: "Montserrat", sans serif;
+	--fuente-krona-one: "Krona One", sans serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: var(--color-primario);
+	color: var(--color-secundario);
+	box-sizing: border-box;
+}
+
+.header{
+	padding: 2% 0 0 16%;
+
+}
+
+.navegador{
+	display: flex;
+	gap: 80px;
+}
+
+.navegador-menu{
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: var(--fuente-montserrat);
+	color: var(--color-terciario);
+	text-decoration: none;
+}
+
+
+.container{
+	display: flex;
+	align-items: center;
+	padding: 6% 15%;
+	justify-content: space-between;
+	gap: 82px;
+}
+
+.presentacion{
+	width: 50%;
+	padding: 20px;
+	border-radius: 5px;
+	gap: 40px;
+}
+
+.contenido_titulo{
+	font-size: 2.25rem;
+	text-align: center;
+	font-family: var(--fuente-krona-one);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.titulo-destaque{
+	color: var(--color-terciario);
+}
+
+.contenido_parrafo{
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: var(--fuente-montserrat);
+	font-optical-sizing: auto;
+}
+
+.enlaces{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.enlaces_link{
+	width: 50%;
+	text-align: center;
+	padding: 21.5px 0;
+	border-radius: 8px;
+	font-family: var(--fuente-montserrat);
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--color-secundario);
+	border: 2px solid var(--color-terciario);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.enlaces_entrada{
+	font-family:var(--fuente-krona-one);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.enlaces_link:hover{
+	background-color: var(--color-hover);
+}
+
+.presentacion_imagen{
+	width: 50%;
+}
+
+.footer{
+	background-color: var(--color-terciario);
+	padding: 24px;
+	color: var(--color-primario);
+	text-align: center;
+	font-family: var(--fuente-montserrat);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1200px){
+
+	.header{
+		padding: 10%;
+	}
+
+	.navegador-menu{
+		justify-content: center;
+	}
+
+	.container{
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+
+	.presentacion_imagen{
+		width: 100%;
+	}
+
+	.presentacion{
+		width: auto;
+	}
+
+}
